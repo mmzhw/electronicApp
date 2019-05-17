@@ -1,0 +1,229 @@
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  padding: 30px;
+  box-sizing: border-box;
+  background: url("../../assets/bg_beijing@2x.png") center no-repeat;
+  background-size: 100% 100%;
+  .header {
+    display: flex;
+    height: 8vh;
+    justify-content: space-between;
+    align-items: center;
+    > img {
+      width: auto;
+      height: auto;
+    }
+    .info {
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+      span {
+        font-size: 1.6rem;
+      }
+      i {
+        margin: 0 20px;
+      }
+    }
+  }
+  .content {
+    height: calc(100vh - 60px - 8vh);
+    box-sizing: border-box;
+    padding-top: 20px;
+    display: flex;
+    .itemWrap {
+      background: #ffffff;
+      box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.07);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      height: 100%;
+      .module1 {
+        width: 100%;
+        height: 26vh;
+        display: flex;
+        flex-direction: column;
+        .schoolBg {
+          height: 40%;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            max-width: 100%;
+          }
+        }
+        > p {
+          text-align: center;
+          font-size: 2rem;
+          color: #343434;
+          margin: 25px 0;
+        }
+        .classInfo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          > p {
+            margin: 0 20px;
+          }
+          > div {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.2rem;
+            p {
+              margin: 0;
+              padding: 0;
+            }
+            p:nth-child(1) {
+              color: #666666;
+              text-align: center;
+              font-size: 1.2rem;
+              padding-bottom: 5px;
+            }
+            p:nth-child(2) {
+              text-align: center;
+              color: #343434;
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+      .module2 {
+        flex: 1;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        .head {
+          background: linear-gradient(180deg, rgba(3, 117, 231, 1) 0%, rgba(4, 57, 187, 1) 100%);
+          font-size: 2.5rem;
+          text-align: center;
+          height: 10vh;
+          line-height: 10vh;
+          color: #ffffff;
+        }
+        .foot {
+          flex: 1;
+          overflow: auto;
+          .item {
+            display: flex;
+            border-bottom: 1px solid #EEEEEE;
+            p {
+              width: 50%;
+              text-align: center;
+              color: #343434;
+              font-size: 1.2rem;
+            }
+          }
+          .item:nth-child(1) {
+            p {
+              color: #2B62F1;
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+    .right {
+      width: 75%;
+      height: 100%;
+      padding-left: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      > .top {
+        height: 49vh;
+        display: flex;
+        .module3 {
+          margin-right: 20px;
+          box-sizing: border-box;
+          width: 45%;
+          display: flex;
+          flex-direction: column;
+          .classImg {
+            flex: 1;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              min-width: 100%;
+              min-height: 100%;
+            }
+          }
+          .classText {
+            height: 7vh;
+            line-height: 7vh;
+            font-size: 2.5rem;
+            background: linear-gradient(180deg, #0372e5 0%, #043ec0 100%);
+            text-align: center;
+            color: #ffffff;
+          }
+        }
+        .module4 {
+          margin-right: 20px;
+          box-sizing: border-box;
+          width: 22%;
+          display: flex;
+          flex-direction: column;
+          .head {
+            background: linear-gradient(180deg, rgba(3, 117, 231, 1) 0%, rgba(4, 57, 187, 1) 100%);
+            font-size: 2.5rem;
+            text-align: center;
+            height: 10vh;
+            line-height: 10vh;
+            color: #ffffff;
+          }
+          .foot {
+            flex: 1;
+            overflow: auto;
+            .item {
+              display: flex;
+              color: #343434;
+              align-items: center;
+              padding: 0 20px;
+              box-sizing: border-box;
+              border-bottom: 1px solid #EEEEEE;
+              p {
+                flex: 1;
+                font-size: 1.2rem;
+              }
+              img {
+                width: 35px;
+                height: 35px;
+                border-radius: 35px;
+                overflow: hidden;
+                margin: 0 20px;
+              }
+            }
+          }
+        }
+        .module5 {
+          flex: 1;
+        }
+      }
+      > .foot {
+        flex: 1;
+        display: flex;
+        padding-top: 20px;
+        .module6 {
+          margin-right: 20px;
+          box-sizing: border-box;
+          width: 45%;
+        }
+        .module7 {
+          margin-right: 20px;
+          box-sizing: border-box;
+          width: 18%;
+        }
+        .module8 {
+          flex: 1;
+        }
+      }
+
+    }
+  }
+}
