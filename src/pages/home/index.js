@@ -105,7 +105,13 @@ class Home extends Component {
                                     }
                                 </div>
                             </div>
-                            <div className={classnames(styles.itemWrap, styles.module5)}></div>
+                            <div className={classnames(styles.itemWrap, styles.module5)}>
+                                <div className={styles.top}>本周排行</div>
+                                <div className={styles.change}>
+                                    <div>周排行</div>
+                                    <div>月排行</div>
+                                </div>
+                            </div>
                         </div>
                         <div className={styles.foot}>
                             <div className={classnames(styles.itemWrap, styles.module6)}></div>

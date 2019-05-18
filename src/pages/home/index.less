@@ -203,6 +203,34 @@
         }
         .module5 {
           flex: 1;
+          background: url("../../assets/bg@2x.png") center no-repeat;
+          .top {
+
+          }
+          .change {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            > div {
+              border: 1px solid #ffffff;
+              width: 20%;
+              text-align: center;
+              height: 50px;
+              line-height: 50px;
+              color: #ffffff;
+              font-size: 1.4rem;
+
+            }
+            > div:nth-child(1) {
+              border-right: none;
+              border-radius: 5px 0 0 5px;
+            }
+            > div:nth-child(2) {
+              border-left: none;
+              border-radius: 0 5px 5px 0;
+            }
+          }
         }
       }
       > .foot {
