@@ -10,6 +10,10 @@ class Index extends Component {
         this.state = {};
     }
 
+    componentDidMount() {
+        this.props.dispatch({ type: 'home/getAllStudents', payload: {}});
+    }
+
     selectYear() {
         this.props.dispatch({
             type: 'home/selectYear',
@@ -18,7 +22,6 @@ class Index extends Component {
                 router.push('/home');
             }
         });
-        router.push('/home');
     }
 
     render() {

@@ -34,7 +34,7 @@ class EvaluateModule extends Component {
         } else if (this.state.step === 2) {
             this.props.dispatch({
                 type: 'home/getRankList',
-                payload: { password: this.state.password },
+                payload: { password: this.state.password }, // 输入密码的参数
                 callback: (res) => {
                     if (res === 1) {
                         router.push('/evaluate');

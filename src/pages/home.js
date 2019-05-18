@@ -22,22 +22,27 @@ class Home extends Component {
         };
     }
 
+    componentDidMount() {
+        this.props.dispatch({ type: 'home/getModule1', payload: {}});
+        this.props.dispatch({ type: 'home/getModule2', payload: {}});
+        this.props.dispatch({ type: 'home/getModule3', payload: {}});
+        this.props.dispatch({ type: 'home/getModule4', payload: {}});
+        this.props.dispatch({ type: 'home/getModule5', payload: { type: 0 }}); // 0周排行，1月排行
+        this.props.dispatch({ type: 'home/getModule6', payload: {}});
+        this.props.dispatch({ type: 'home/getModule7', payload: {}});
+    }
+
     changeMouthWeek(value) {
-        this.setState({
-            mouthWeek: value
-        });
+        this.setState({ mouthWeek: value });
+        this.props.dispatch({ type: 'home/getModule5', payload: { type: value }}); // 0周排行，1月排行
     }
 
     closeModule(key) {
-        this.setState({
-            [key]: false
-        });
+        this.setState({ [key]: false });
     }
 
     openModule(key) {
-        this.setState({
-            [key]: true
-        });
+        this.setState({ [key]: true });
     }
 
     render() {
