@@ -1,32 +1,5 @@
 .wrap {
-  width: 100vw;
-  height: 100vh;
-  padding: 30px;
-  box-sizing: border-box;
-  background: url("../../assets/bg_beijing@2x.png") center no-repeat;
-  background-size: 100% 100%;
-  .header {
-    display: flex;
-    height: 8vh;
-    justify-content: space-between;
-    align-items: center;
-    > img {
-      width: auto;
-      height: auto;
-    }
-    .info {
-      display: flex;
-      align-items: center;
-      color: #ffffff;
-      span {
-        font-size: 1.6rem;
-      }
-      i {
-        margin: 0 20px;
-      }
-    }
-  }
-  .content {
+  > .content {
     height: calc(100vh - 60px - 8vh);
     box-sizing: border-box;
     padding-top: 20px;
@@ -140,7 +113,7 @@
         .module3 {
           margin-right: 20px;
           box-sizing: border-box;
-          width: 45%;
+          width: 43%;
           display: flex;
           flex-direction: column;
           .classImg {
@@ -166,7 +139,7 @@
         .module4 {
           margin-right: 20px;
           box-sizing: border-box;
-          width: 22%;
+          width: 24%;
           display: flex;
           flex-direction: column;
           .head {
@@ -203,24 +176,37 @@
         }
         .module5 {
           flex: 1;
-          background: url("../../assets/bg@2x.png") center no-repeat;
+          background: url("../assets/bg@2x.png") center no-repeat;
+          display: flex;
+          flex-direction: column;
           .top {
-
+            height: 8vh;
+            color: #ffffff;
+            font-size: 1.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              max-height: 7vh;
+            }
           }
           .change {
-            margin: 0 auto;
             display: flex;
             justify-content: center;
             align-items: center;
             > div {
               border: 1px solid #ffffff;
-              width: 20%;
+              width: 28%;
               text-align: center;
-              height: 50px;
-              line-height: 50px;
+              height: 30px;
+              line-height: 30px;
               color: #ffffff;
-              font-size: 1.4rem;
+              font-size: 1.2rem;
 
+            }
+            > .divActive {
+              background: #FF4930;
+              border: 1px solid #FF4930;
             }
             > div:nth-child(1) {
               border-right: none;
@@ -229,6 +215,41 @@
             > div:nth-child(2) {
               border-left: none;
               border-radius: 0 5px 5px 0;
+            }
+          }
+          .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            .item {
+              display: flex;
+              align-items: center;
+              color: #ffffff;
+              padding: 0 20px;
+              box-sizing: border-box;
+              background: #FE8A8A;
+              margin: 0 40px 10px;
+              border-radius: 10px;
+              img {
+                width: 40px;
+                margin-right: 10px;
+              }
+              p {
+                flex: 1;
+              }
+              span {
+                width: 10%;
+              }
+            }
+            .item:nth-child(1) {
+              background: #F1D04A;
+            }
+            .item:nth-child(2) {
+              background: #FFC77E;
+            }
+            .item:nth-child(3) {
+              background: #F8D0A3;
             }
           }
         }
@@ -240,15 +261,75 @@
         .module6 {
           margin-right: 20px;
           box-sizing: border-box;
-          width: 45%;
+          width: 43%;
+          background: url("../assets/bg_dongtai @2x.png") center no-repeat;
+          padding: 50px 50px 10px 50px;
+          display: flex;
+          flex-direction: column;
+          .head {
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            img {
+              padding-right: 20px;
+            }
+          }
+          .content {
+            overflow: auto;
+            flex: 1;
+            color: #ffffff;
+            font-size: 1.4rem;
+          }
+          .foot {
+            height: 100px;
+            p {
+              text-align: right;
+              color: #ffffff;
+            }
+          }
         }
         .module7 {
           margin-right: 20px;
           box-sizing: border-box;
-          width: 18%;
+          width: 22%;
+          img {
+            width: 100%;
+            height: 100%;
+          }
         }
         .module8 {
           flex: 1;
+          background: url("../assets/bg_tianqi@2x.png") center no-repeat;
+          background-size: 100% 100%;
+          > div {
+            padding: 0 40px;
+            box-sizing: border-box;
+          }
+          > div:nth-child(1) {
+            height: 50%;
+            display: flex;
+            justify-content: space-around;
+            color: #ffffff;
+            font-size: 5rem;
+            vertical-align: bottom;
+            align-items: center;
+            img {
+              height: 100px;
+              width: auto;
+            }
+          }
+          > div:nth-child(2),div:nth-child(3) {
+            margin: 20px 0;
+            color: #0B6CA1;
+            display: flex;
+            font-size: 1.6rem;
+            span {
+              color: #A3A29E;
+              padding: 0 10px;
+            }
+          }
         }
       }
 

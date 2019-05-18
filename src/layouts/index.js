@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import styles from './index.less';
+import Head from '../components/head';
 
 class Layout extends Component {
     constructor(props) {
@@ -8,7 +10,8 @@ class Layout extends Component {
 
     render() {
         return (
-            <div>
+            <div className={styles.wrap}>
+                <Head />
                 {this.props.children}
             </div>
 
