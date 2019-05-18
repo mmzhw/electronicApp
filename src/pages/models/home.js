@@ -140,42 +140,49 @@ export default {
                 yield put({ type: 'save', payload: { yearType: response.result }});
             }
         },
+        // 年级信息
         * getModule1({ payload, callback }, { call, put }) {
             const response = yield call(getModule1, payload);
             if (response && response.code === 1) {
                 yield put({ type: 'save', payload: { module1: response.result }});
             }
         },
+        // 获取课表请求
         * getModule2({ payload, callback }, { call, put }) {
             const response = yield call(getModule1, payload);
             if (response && response.code === 1) {
                 yield put({ type: 'save', payload: { module2: response.result }});
             }
         },
+        // 班级风采
         * getModule3({ payload, callback }, { call, put }) {
             const response = yield call(getModule1, payload);
             if (response && response.code === 1) {
                 yield put({ type: 'save', payload: { getModule3: response.result }});
             }
         },
+        // 任课老师
         * getModule4({ payload, callback }, { call, put }) {
             const response = yield call(getModule1, payload);
             if (response && response.code === 1) {
                 yield put({ type: 'save', payload: { module4: response.result }});
             }
         },
+        // 本周/本月排行，0周排行，1月排行
         * getModule5({ payload, callback }, { call, put }) {
             const response = yield call(getModule1, payload);
             if (response && response.code === 1) {
                 yield put({ type: 'save', payload: { module5: response.result }});
             }
         },
+        // 通知动态
         * getModule6({ payload, callback }, { call, put }) {
             const response = yield call(getModule1, payload);
             if (response && response.code === 1) {
                 yield put({ type: 'save', payload: { module6: response.result }});
             }
         },
+        // 天气
         * getModule7({ payload, callback }, { call, put }) {
             const response = yield call(getModule1, payload);
             if (response && response.code === 1) {
