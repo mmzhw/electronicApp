@@ -168,7 +168,7 @@
   font-size: 1.2rem;
 }
 .homeWrap> .content .right > .top .module4 .foot .item p {
-  flex: 1;
+  width: 50%;
   font-size: 1.2rem;
 }
 .homeWrap> .content .right > .top .module4 .foot .item img {
