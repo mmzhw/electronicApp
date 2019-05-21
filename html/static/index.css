@@ -9,6 +9,7 @@
   padding: 15px 10px;
   box-sizing: border-box;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .yearWrap .item > div {

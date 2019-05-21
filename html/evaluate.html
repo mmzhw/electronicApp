@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <link rel="stylesheet" type="text/css" href="static/normalize.css"/>
-  <link rel="stylesheet" type="text/css" href="static/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="static/common.css"/>
   <link rel="stylesheet" type="text/css" href="static/evaluate.css"/>
 </head>
@@ -35,20 +34,12 @@
     <div class="item">
       <div class="label">选择学生</div>
       <div class="value module2">
-        <div class="dropdown">
-          <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">请选择学生</button>
-          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-            <li role="presentation" onclick="addStudent('Java')">
-              Java
-            </li>
-            <li role="presentation" onclick="addStudent('数据挖掘')">
-              数据挖掘
-            </li>
-            <li role="presentation" onclick="addStudent('数据通信/网络')">
-              数据通信/网络
-            </li>
-          </ul>
-        </div>
+        <div id="dropBut" onclick="changeStudentDiv()">请选择学生</div>
+        <ul style="display: none">
+          <li onclick="addStudent(this, 'Java')">Java</li>
+          <li onclick="addStudent(this, '数据挖掘')">数据挖掘</li>
+          <li onclick="addStudent(this, '数据通信/网络')">数据通信/网络</li>
+        </ul>
       </div>
     </div>
     <div class="item">
@@ -89,9 +80,7 @@
   </div>
 
 </div>
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/evaluate.js"></script>
 </body>
 </html>
