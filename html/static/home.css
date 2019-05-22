@@ -403,8 +403,9 @@
   justify-content: center;
 }
 .evaluateModule .content .selectTeacher {
-  flex: 1;
+  height: 50vh;
   display: none;
+  overflow: auto;
 }
 .evaluateModule .content .selectTeacher .item {
   display: flex;
@@ -414,6 +415,7 @@
 }
 .evaluateModule .content .selectTeacher .item img {
   width: 64px;
+  height: 64px;
 }
 .evaluateModule .content .selectTeacher .item .noActive {
   width: 30px;
@@ -429,6 +431,8 @@
 .evaluateModule .content .selectTeacher .item p {
   color: #343434;
   font-size: 1.4rem;
+  width: 25%;
+  text-indent: 5vw;
 }
 .evaluateModule .content .selectTeacher .item:nth-last-child(1) {
   border-bottom: none;
