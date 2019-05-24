@@ -34,12 +34,28 @@
     <div class="item">
       <div class="label">选择学生</div>
       <div class="value module2">
-        <div id="dropBut" onclick="changeStudentDiv()">请选择学生</div>
-        <ul style="display: none">
-          <li onclick="addStudent(this, 'Java')">Java</li>
-          <li onclick="addStudent(this, '数据挖掘')">数据挖掘</li>
-          <li onclick="addStudent(this, '数据通信/网络')">数据通信/网络</li>
-        </ul>
+        <div id="dropBut" onclick="changeStudentDiv(event)">请选择学生</div>
+        <div  style="display: none" class="studentSureWrap">
+          <ul>
+            <li onclick="addStudent(event, this, 'Java')">Java</li>
+            <li onclick="addStudent(event, this, '数据挖掘')">数据挖掘</li>
+            <li onclick="addStudent(event, this, '数据挖掘')">数据挖掘</li>
+            <li onclick="addStudent(event, this, '数据挖掘')">数据挖掘</li>
+            <li onclick="addStudent(event, this, '数据挖掘')">数据挖掘</li>
+            <li onclick="addStudent(event, this, '数据挖掘')">数据挖掘</li>
+            <li onclick="addStudent(event, this, '数据挖掘')">数据挖掘</li>
+            <li onclick="addStudent(event, this, '数据挖掘')">数据挖掘</li>
+            <li onclick="addStudent(event, this, '数据挖掘')">数据挖掘</li>
+            <li onclick="addStudent(event, this, '数据挖掘')">数据挖掘</li>
+            <li onclick="addStudent(event, this, '数据挖掘')">数据挖掘</li>
+            <li onclick="addStudent(event, this, '数据挖掘')">数据挖掘</li>
+            <li onclick="addStudent(event, this, '数据挖掘')">数据挖掘</li>
+            <li onclick="addStudent(event, this, '数据挖掘')">数据挖掘</li>
+            <li onclick="addStudent(event, this, '数据挖掘')">数据挖掘</li>
+            <li onclick="addStudent(event, this, '数据通信/网络')">数据通信/网络</li>
+          </ul>
+          <div class="studentSure" onclick="changeStudentDiv(event)">确认</div>
+        </div>
       </div>
     </div>
     <div class="item">
@@ -82,5 +98,11 @@
 </div>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/evaluate.js"></script>
+<script>
+  document.onclick = function() {
+    console.log(this)
+    $('#dropBut').next()[0].style.display = 'none';
+  }
+</script>
 </body>
 </html>

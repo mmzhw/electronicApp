@@ -57,7 +57,9 @@ function chooseType(type) {
     }
 }
 
-function addStudent(el, student) {
+function addStudent(event, el, student) {
+    event.stopPropagation();
+    event.preventDefault();
     if (el.className === '') {
         el.className = 'activeLi';
         if ($('#textareaStudent')[0].value) {
@@ -88,7 +90,9 @@ function clearData() {
     $('#textareaStudent')[0].value = '';
 }
 
-function changeStudentDiv() {
+function changeStudentDiv(event) {
+    event.stopPropagation();
+    event.preventDefault();
     let el = $('#dropBut').next()[0];
     if (el.style.display === 'block') {
         el.style.display = 'none';
@@ -96,3 +100,7 @@ function changeStudentDiv() {
         el.style.display = 'block';
     }
 }
+
+document.onclick = function() {
+    $('#dropBut').next()[0].style.display = 'none';
+};
