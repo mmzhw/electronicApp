@@ -238,8 +238,10 @@
   border-radius: 10px;
 }
 .homeWrap> .content .right > .top .module5 .content .item img {
-  width: 20%;
+  width: 3vh;
   margin-right: 10px;
+  height: 3vh;
+  border-radius: 3vh;
 }
 .homeWrap> .content .right > .top .module5 .content .item p {
   flex: 1;
