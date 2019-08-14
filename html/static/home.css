@@ -113,12 +113,12 @@
   width: 50%;
   text-align: center;
   color: #343434;
-  font-size: 16px;
+  font-size: 26px;
 }
 
 .homeWrap > .content .left .module2 .foot .item:nth-child(1) p {
   color: #2B62F1;
-  font-size: 20px;
+  font-size: 26px;
 }
 
 .homeWrap > .content .right {
@@ -280,7 +280,7 @@
   margin: 0 40px 10px;
   border-radius: 10px;
   width:318px;
-  height:50px;
+  height:60px;
 }
 
 .homeWrap > .content .right > .top .module5 .content .item img {
@@ -349,9 +349,7 @@
   font-size: 28px;
 }
 
-.homeWrap > .content .right > .foot .module6 .foot {
-  height: 25%;
-}
+
 
 .homeWrap > .content .right > .foot .module6 .foot p {
   text-align: right;
@@ -457,8 +455,8 @@
 }
 
 .evaluateModule .content {
-  width: 864px;
-  height: 216px;
+  width: 45%;
+  height: 72%;
   background: #ffffff;
   border-radius: 10px;
   overflow: hidden;
@@ -469,7 +467,7 @@
 
 .evaluateModule .content .head {
   width: 100%;
-  height: 70px;
+  height: 100px;
   margin: 1px;
   background: linear-gradient(153deg, #49a0ff 0%, #3b97fd 0%, #4176e9 100%);
   font-size: 32px;
@@ -493,8 +491,8 @@
 }
 
 .evaluateModule .content .selectTeacher .item img {
-  width: 64px;
-  height: 64px;
+  width: 50px;
+  height: 50px;
 }
 
 .evaluateModule .content .selectTeacher .item .noActive {

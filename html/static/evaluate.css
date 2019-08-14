@@ -59,7 +59,7 @@
   background: #ffffff;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.07);
   width: 100%;
-  height: 60%;
+  height: 70px;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -67,7 +67,7 @@
   text-indent: 30px;
 }
 
-.evaluateWrap .item .module2 ul {
+.evaluateWrap .item .module2 .studentSureWrap {
   position: absolute;
   top: 80%;
   left: 0;
@@ -75,6 +75,14 @@
   background: #ffffff;
   width: 100%;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.07);
+  padding: 0;
+  height: 50vh;
+  overflow: auto;
+}
+
+.evaluateWrap .item .module2 ul {
+  background: #ffffff;
+  width: 100%;
   padding: 0;
   text-indent: 30px;
   height: 540px;
@@ -95,6 +103,19 @@
   width: 100%;
   height: 100%;
   text-align: left;
+  font-size: 22px;
+}
+
+.evaluateWrap .studentSure {
+  margin: 38px auto;
+  width: 20%;
+  height: 43px;
+  border-radius: 57px;
+  background: #3c8ff8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
   font-size: 22px;
 }
 
@@ -139,7 +160,7 @@
 }
 
 .backBut {
-  position: absolute;
+  position: fixed;
   right: 96px;
   bottom: 54px;
   z-index: 99;
