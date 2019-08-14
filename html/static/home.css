@@ -42,7 +42,7 @@
   text-align: center;
   font-size: 30px;
   color: #343434;
-  margin: 15px 0;
+  margin: 7px 0;
 }
 
 .homeWrap > .content .left .module1 .classInfo {
@@ -113,12 +113,12 @@
   width: 50%;
   text-align: center;
   color: #343434;
-  font-size: 26px;
+  font-size: 18px;
 }
 
 .homeWrap > .content .left .module2 .foot .item:nth-child(1) p {
   color: #2B62F1;
-  font-size: 26px;
+  font-size: 20px;
 }
 
 .homeWrap > .content .right {
@@ -194,12 +194,12 @@
   padding: 10px 15px;
   box-sizing: border-box;
   border-bottom: 1px solid #EEEEEE;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .homeWrap > .content .right > .top .module4 .foot .item p {
   width: 40%;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .homeWrap > .content .right > .top .module4 .foot .item img {
@@ -221,7 +221,7 @@
   padding: 20px 0;
   height: 86px;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -280,7 +280,7 @@
   margin: 0 40px 10px;
   border-radius: 10px;
   width:318px;
-  height:60px;
+  height:50px;
 }
 
 .homeWrap > .content .right > .top .module5 .content .item img {
@@ -346,7 +346,7 @@
   overflow: auto;
   flex: 1;
   color: #ffffff;
-  font-size: 28px;
+  font-size: 23px;
 }
 
 
@@ -360,7 +360,7 @@
 .homeWrap > .content .right > .foot .module7 {
   margin-right: 20px;
   box-sizing: border-box;
-  width: 22%;
+  width: 24%;
 }
 
 .homeWrap > .content .right > .foot .module7 img {
@@ -549,6 +549,6 @@
   display: flex;
 }
 
-#mouthRank {
+#monthRank {
   display: none;
 }
