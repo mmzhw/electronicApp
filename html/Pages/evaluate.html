@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>金康园小学——电子班牌</title>
+    <link rel="stylesheet" type="text/css" href="static/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="static/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="static/common.css" />
+    <link rel="stylesheet" type="text/css" href="static/evaluate.css" />
+    <script src="js/cssboot.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <img src='assets/icon_logo.png' />
+            <div class="info">
+                <span id="day"></span><i>/</i>
+                <span id="time"></span><i>/</i>
+                <span>云南-昆明</span><i>/</i>
+                <img src='assets/wifi.png' />
+            </div>
+        </div>
+        <div class="evaluateWrap" id="evaluateWrap">
+            <div class="item">
+                <div class="label">评价类型</div>
+                <div class="value module1">
+                    <div class="chooseType" onclick="chooseType(1,'行为习惯')">
+                        <img src='assets/btn_xuanzhong.png' />行为习惯
+                    </div>
+                    <div class="chooseType" onclick="chooseType(2,'学习习惯')">
+                        <img src='assets/icon_quan.png' />学习习惯
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="label">选择学生</div>
+                <div class="value module2">
+                    <div id="dropBut" onclick="changeStudentDiv()">请选择学生</div>
+                    <ul style="display: none" id="studentlist">
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <div class="label">已选学生</div>
+                <div class="value module3">
+                    <textarea id="textareaStudent" disabled></textarea>
+                </div>
+            </div>
+            <div class="item">
+                <div class="label">红花</div>
+                <div class="value">
+                    <img class="redFlower" src='assets/icon_hua_gray.png' onclick="getRed(1)" />
+                    <img class="redFlower" src='assets/icon_hua_gray.png' onclick="getRed(2)" />
+                    <img class="redFlower" src='assets/icon_hua_gray.png' onclick="getRed(3)" />
+                    <img class="redFlower" src='assets/icon_hua_gray.png' onclick="getRed(4)" />
+                    <img class="redFlower" src='assets/icon_hua_gray.png' onclick="getRed(5)" />
+                </div>
+            </div>
+            <div class="item">
+
+                <div class="label">蓝花</div>
+                <div class="value">
+                    <img class="blueFlower" src='assets/icon_hua_gray.png' onclick="getBule(1)" />
+                    <img class="blueFlower" src='assets/icon_hua_gray.png' onclick="getBule(2)" />
+                    <img class="blueFlower" src='assets/icon_hua_gray.png' onclick="getBule(3)" />
+                    <img class="blueFlower" src='assets/icon_hua_gray.png' onclick="getBule(4)" />
+                    <img class="blueFlower" src='assets/icon_hua_gray.png' onclick="getBule(5)" />
+                </div>
+            </div>
+           
+            <div class="evaluateBut">
+                <div onclick="sure()">确认</div>
+                <div onclick="clearData()">清空</div>
+            </div>
+            <div class="backBut" onclick="backHome()">
+                <img src='assets/Shape.png' />
+                <div>返回首页</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/layer/layer.js"></script>
+    <script src="js/jsboot.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <script id="studentlist-Item" type="text/x-mustache">
+        {{#StudentList}}
+        <li onclick="addStudent(this, '{{StudentName}}','{{RowGuid}}')" id="{{RowGuid}}">{{StudentName}}</li>
+        {{/StudentList}}
+    </script>
+
+    <script src="js/evaluate.js"></script>
+</body>
+</html>

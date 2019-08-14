@@ -1,0 +1,151 @@
+﻿html #layui_layer_skinwebstylecss {
+    display: none;
+    position: absolute;
+    width: 1989px;
+}
+
+/*layer-common-myskin*/
+body .layer-common-myskin .layui-layer-title {
+    padding: 0 0 0 16px;
+    height: 32px;
+    line-height: 32px;
+    background: #d1eff3;
+    color: #25b9cb;
+    font-weight: bold;
+    border: 0;
+}
+
+body .layer-common-myskin .layui-layer-setwin {
+    right: 11px;
+    top: 10px;
+}
+
+body .layer-common-myskin .layui-layer-setwin a {
+    width: 12px;
+    height: 12px;
+}
+
+body .layer-common-myskin .layui-layer-btn {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+body .layer-common-myskin .layui-layer-btn .layui-layer-btn-c {
+    padding: 0;
+}
+
+body .layer-common-myskin .layui-layer-setwin .layui-layer-close1 {
+    background: url("close.png");
+}
+
+body .layer-common-myskin .layui-layer-btn .layui-layer-btn0 {
+    border-color: #19b0c1;
+    background: #19b0c1;
+}
+
+body .layer-common-myskin .layui-layer-btn .layui-layer-btn0:hover {
+    border-color: #179dac;
+    background: #179dac;
+}
+
+body .layer-common-myskin .layui-layer-btn a {
+    margin: 0 10px;
+    height: 24px;
+    line-height: 24px;
+    background: #f4f4f4;
+    border-color: #e1e1e1;
+    border-radius: 3px;
+}
+body .layer-common-myskin .layui-layer-btn a:hover {
+    background: #83d8e1;
+    border-color: #83d8e1;
+    color: #fff;
+}
+
+/*layer-ptoview-myskin*/
+body .layer-ptoview-myskin .layui-layer-title {
+    padding: 0 0 0 16px;
+    height: 32px;
+    line-height: 32px;
+    background: #2a3031;
+    color: #fff;
+    font-weight: bold;
+    border-color: #000;
+}
+body .layer-ptoview-myskin .layui-layer-setwin {
+    right: 11px;
+    top: 10px;
+}
+
+body .layer-ptoview-myskin .layui-layer-setwin a {
+    width: 12px;
+    height: 12px;
+}
+
+body .layer-ptoview-myskin .layui-layer-btn .layui-layer-btn-c {
+    padding: 0;
+}
+
+body .layer-ptoview-myskin .layui-layer-setwin .layui-layer-close1 {
+    background: url("close2.png");
+}
+
+body .layer-ptoview-myskin .layui-layer-content {
+    background: #000;
+}
+
+/*layer-alter-pwdskin*/
+body .layer-alter-pwdskin .layui-layer-title {
+    padding: 0 0 0 16px;
+    height: 32px;
+    line-height: 32px;
+    background: #d1eff3;
+    color: #25b9cb;
+    font-weight: bold;
+    border: 0;
+}
+
+body .layer-alter-pwdskin .layui-layer-setwin {
+    right: 11px;
+    top: 10px;
+}
+
+body .layer-alter-pwdskin .layui-layer-setwin a {
+    width: 12px;
+    height: 12px;
+}
+
+body .layer-alter-pwdskin .layui-layer-btn .layui-layer-btn-c {
+    padding: 0;
+}
+
+body .layer-alter-pwdskin .layui-layer-setwin .layui-layer-close1 {
+    background: url("close.png");
+}
+
+body .layer-alter-pwdskin .layui-layer-btn .layui-layer-btn0 {
+    border-color: #19b0c1;
+    background: #19b0c1;
+}
+
+body .layer-alter-pwdskin .layui-layer-btn .layui-layer-btn0:hover {
+    border-color: #179dac;
+    background: #179dac;
+}
+
+body .layer-alter-pwdskin .layui-layer-btn a {
+    margin: 0 10px 43px 10px;
+    padding: 0;
+    width: 74px;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+    background: #f4f4f4;
+    border-color: #e1e1e1;
+    border-radius: 3px;
+}
+body .layer-alter-pwdskin .layui-layer-btn a:hover {
+    background: #83d8e1;
+    border-color: #83d8e1;
+    color: #fff;
+}

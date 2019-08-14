@@ -4,8 +4,8 @@
 }
 
 .yearWrap .item {
-  width: 265px;
-  height: 89px;
+  width: calc((100vw - 60px) / 6);
+  height: 5vw;
   padding: 15px 10px;
   box-sizing: border-box;
   color: #ffffff;
@@ -19,5 +19,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 1.2rem;
 }

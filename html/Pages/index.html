@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>金康园小学——电子班牌</title>
+    <link rel="stylesheet" type="text/css" href="static/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="static/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="static/common.css" />
+    <link rel="stylesheet" type="text/css" href="static/index.css" />
+    <script src="js/cssboot.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <img src='assets/icon_logo.png' />
+            <div class="info">
+                <span id="day"></span><i>/</i>
+                <span id="time"></span><i>/</i>
+                <span>云南-昆明</span><i>/</i>
+                <img src='assets/wifi.png' />
+            </div>
+        </div>
+        <div class="yearWrap" id="class">
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/layer/layer.js"></script>
+    <script src="js/jsboot.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <script id="class-Item" type="text/x-mustache">
+        {{#ClassList}}
+            <div class="item" onclick="chooseYear('{{RowGuid}}')"><div>{{ClassName}}</div></div>
+        {{/ClassList}}
+    </script>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

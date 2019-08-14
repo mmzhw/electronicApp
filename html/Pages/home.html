@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>金康园小学——电子班牌</title>
+    <link rel="stylesheet" type="text/css" href="static/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="static/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="static/common.css" />
+    <link rel="stylesheet" type="text/css" href="static/home.css" />
+    <script src="js/cssboot.js"></script>
+</head>
+<body>
+    <div class="imgModuleWrap" id="imgModuleWrap" onclick="backHome()">
+        <img name="PhotoFileName" src='' />
+        <div class="backBut" onclick="backHome()">
+            <img src='assets/Shape.png' />
+            <div>返回首页</div>
+        </div>
+    </div>
+    <div class="evaluateModule" id="evaluateModule">
+        <div class="content">
+            <div class="head">任课老师</div>
+            <div class="selectTeacher" id="selectTeacherWrap">
+            </div>
+            
+            <div class="inputPassword" id="inputPasswordWrap">
+              
+                <input type='password' id="inputPassword">
+            </div>
+
+            <div class="sure" onclick="evaluateSure()">确定</div>
+        </div>
+        <div class="backBut" onclick="backHome()">
+            <img src='assets/Shape.png' />
+            <div>返回首页</div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="header">
+            <img src='assets/icon_logo.png' />
+            <div class="info">
+                <span id="day"></span><i>/</i>
+                <span id="time"></span><i>/</i>
+                <span>云南-昆明</span><i>/</i>
+                <img src='assets/wifi.png' />
+            </div>
+        </div>
+        <div class="homeWrap">
+            <div class="content">
+                <div class="left">
+                    <div class="itemWrap module1">
+                        <div class="schoolBg"><img src='assets/tempbg1.png' /></div>
+                        <p id="ClassName"></p>
+                        <div class="classInfo">
+                            <div>
+                                <p>班学生</p>
+                                <p id="StudentCount"></p>
+                            </div>
+                            <p>|</p>
+                            <div>
+                                <p>班主任</p>
+                                <p id="BZRName"></p>
+                            </div>
+                            <p>|</p>
+                            <div>
+                                <p>副班主任</p>
+                                <p id="FBZRName"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemWrap module2" id="kb">
+
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="top">
+                        <div class="itemWrap module3" onclick="openImgModule()">
+                            <div class="classImg">
+                                <img name="PhotoFileName" src='' style="width:100%;height:100%" />
+                            </div>
+                            <div class="classText">班级风采</div>
+                        </div>
+                        <div class="itemWrap module4">
+                            <div class="head">任课老师</div>
+                            <div class="foot" id="rk">
+                            </div>
+                        </div>
+                        <div class="itemWrap module5">
+                            <div class="top"><img src='assets/icon_suileft.png' />本周排行<img src='assets/icon_suilright.png' /></div>
+                            <div class="change">
+                                <div class="divActive" onclick="changeRank(this,1)">周排行</div>
+                                <div onclick="changeRank(this,2)">月排行</div>
+                            </div>
+                            <div class="content" id="weekRank">
+                                <!--<div class="item">
+                                    <img src='assets/btn_touxiang.png' />
+                                    <p>周排行</p><span>70分</span>
+                                </div>-->
+                            </div>
+                            <div class="content" id="monthRank">
+                                <!--<div class="item">
+                                    <img src='assets/btn_touxiang.png' />
+                                    <p>月排行</p><span>70分</span>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foot">
+                        <div class="itemWrap module6">
+                            <div class="head">
+                                <img src='assets/icon_notice.png' />
+                                <span>通知动态</span>
+                            </div>
+                            <div class="content" id="Notice"></div>
+                            <div class="foot">
+                                <p id="PublishTime"></p>
+                                <p>金康园小学教务处</p>
+                            </div>
+                        </div>
+                        <div class="itemWrap module7" onclick="openEvaluateModule()">
+                            <img src='assets/icon_ketangpinjia.png' />
+                        </div>
+                        <div class="itemWrap module8">
+                            <div><span id="tem">23</span>℃<img src='assets/icon_yun.png' /></div>
+                            <div id="weather"><span id="win"></span> <span>|</span><span id="wea"></span><span>|</span>昆明</div>
+                            <div id="day1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/layer/layer.js"></script>
+    <script src="js/jsboot.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <script id="kb-Item" type="text/x-mustache">
+        <div class="head">{{WeekDay}}</div>
+        <div class="foot">
+            <div class="item">
+                <p>时间</p>
+                <p>课程</p>
+            </div>
+            {{#CourseList}}
+            <div class="item">
+                <p>{{Time}}</p>
+                <p>{{CourseName}}</p>
+            </div>
+            {{/CourseList}}
+        </div>
+    </script>
+
+    <script id="rk-Item" type="text/x-mustache">
+        {{#TeacherRK}}
+        <div class="item"><p>{{Index}}、{{CourseName}}</p><img src='{{TeacherPic}}' /><span>{{TeacherName}}</span></div>
+        {{/TeacherRK}}
+    </script>
+
+    <script id="rk1-Item" type="text/x-mustache">
+        {{#TeacherRK}}
+        <div class="item">
+            <img src='{{TeacherPic}}' />
+            <p>{{CourseName}}</p>
+            <p>{{TeacherName}}</p>
+            <div class="chooseTeacher noActive" data-teacherId="{{RowGuid}}" onclick="chooseTeacher('{{RowGuid}}')"></div>
+        </div>
+        {{/TeacherRK}}
+    </script>
+
+
+    <script id="week-Item" type="text/x-mustache">
+        {{#WeekList}}
+        <div class="item">
+            <img src='{{PhotoFileName}}' />
+            <p>{{StudentName}}</p><span>{{Score}}分</span>
+        </div>
+        {{/WeekList}}
+    </script>
+
+    <script id="month-Item" type="text/x-mustache">
+        {{#MonthList}}
+        <div class="item">
+            <img src='{{PhotoFileName}}' />
+            <p>{{StudentName}}</p><span>{{Score}}分</span>
+        </div>
+        {{/MonthList}}
+    </script>
+    <script src="js/home.js"></script>
+</body>
+</html>

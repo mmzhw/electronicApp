@@ -1,5 +1,5 @@
 .homeWrap > .content {
-  height: 934px;
+  height: calc(100vh - 60px - 8vh);
   box-sizing: border-box;
   padding-top: 20px;
   display: flex;
@@ -21,7 +21,7 @@
 
 .homeWrap > .content .left .module1 {
   width: 100%;
-  height: 280px;
+  height: 26vh;
   display: flex;
   flex-direction: column;
 }
@@ -40,9 +40,9 @@
 
 .homeWrap > .content .left .module1 > p {
   text-align: center;
-  font-size: 30px;
+  font-size: 1.6rem;
   color: #343434;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 .homeWrap > .content .left .module1 .classInfo {
@@ -58,7 +58,7 @@
 .homeWrap > .content .left .module1 .classInfo > div {
   display: flex;
   flex-direction: column;
-  font-size: 14px;
+  font-size: 1.2rem;
 }
 
 .homeWrap > .content .left .module1 .classInfo > div p {
@@ -69,14 +69,14 @@
 .homeWrap > .content .left .module1 .classInfo > div p:nth-child(1) {
   color: #666666;
   text-align: center;
-  font-size: 24px;
+  font-size: 1.2rem;
   padding-bottom: 5px;
 }
 
 .homeWrap > .content .left .module1 .classInfo > div p:nth-child(2) {
   text-align: center;
   color: #343434;
-  font-size: 16px;
+  font-size: 1.4rem;
 }
 
 .homeWrap > .content .left .module2 {
@@ -88,10 +88,10 @@
 
 .homeWrap > .content .left .module2 .head {
   background: linear-gradient(180deg, #0375e7 0%, #0439bb 100%);
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
-  height: 108px;
-  line-height: 108px;
+  height: 10vh;
+  line-height: 10vh;
   color: #ffffff;
 }
 
@@ -113,12 +113,12 @@
   width: 50%;
   text-align: center;
   color: #343434;
-  font-size: 16px;
+  font-size: 1.2rem;
 }
 
 .homeWrap > .content .left .module2 .foot .item:nth-child(1) p {
   color: #2B62F1;
-  font-size: 20px;
+  font-size: 1.4rem;
 }
 
 .homeWrap > .content .right {
@@ -131,7 +131,7 @@
 }
 
 .homeWrap > .content .right > .top {
-  height: 529px;
+  height: 49vh;
   display: flex;
 }
 
@@ -157,9 +157,9 @@
 }
 
 .homeWrap > .content .right > .top .module3 .classText {
-  height: 75px;
-  line-height: 75px;
-  font-size: 35px;
+  height: 7vh;
+  line-height: 7vh;
+  font-size: 2.5rem;
   background: linear-gradient(180deg, #0372e5 0%, #043ec0 100%);
   text-align: center;
   color: #ffffff;
@@ -175,10 +175,10 @@
 
 .homeWrap > .content .right > .top .module4 .head {
   background: linear-gradient(180deg, #0375e7 0%, #0439bb 100%);
-  font-size: 35px;
+  font-size: 2.5rem;
   text-align: center;
-  height: 75px;
-  line-height: 75px;
+  height: 7vh;
+  line-height: 7vh;
   color: #ffffff;
 }
 
@@ -194,12 +194,12 @@
   padding: 10px 15px;
   box-sizing: border-box;
   border-bottom: 1px solid #EEEEEE;
-  font-size: 22px;
+  font-size: 1.2rem;
 }
 
 .homeWrap > .content .right > .top .module4 .foot .item p {
   width: 40%;
-  font-size: 22px;
+  font-size: 1.2rem;
 }
 
 .homeWrap > .content .right > .top .module4 .foot .item img {
@@ -218,18 +218,16 @@
 }
 
 .homeWrap > .content .right > .top .module5 .top {
-  padding: 20px 0;
-  height: 86px;
+  height: 8vh;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 1.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
 }
 
 .homeWrap > .content .right > .top .module5 .top img {
-  max-height: 75px;
+  max-height: 7vh;
 }
 
 .homeWrap > .content .right > .top .module5 .change {
@@ -245,7 +243,7 @@
   height: 30px;
   line-height: 30px;
   color: #ffffff;
-  font-size: 22px;
+  font-size: 1.2rem;
 }
 
 .homeWrap > .content .right > .top .module5 .change > .divActive {
@@ -279,27 +277,24 @@
   background: #FE8A8A;
   margin: 0 40px 10px;
   border-radius: 10px;
-  width:318px;
-  height:50px;
 }
 
 .homeWrap > .content .right > .top .module5 .content .item img {
   /*width: 20%;
   margin-right: 10px;*/
-  width: 54px;
+  width: 5vh;
   margin-right: 10px;
-  height: 54px;
-  border-radius: 32px;
+  height: 5vh;
+  border-radius: 3vh;
 }
 
 .homeWrap > .content .right > .top .module5 .content .item p {
   flex: 1;
-  font-size: 22px;
+  font-size: 1.2rem;
 }
 
 .homeWrap > .content .right > .top .module5 .content .item span {
   width: 20%;
-  font-size: 22px;
 }
 
 .homeWrap > .content .right > .top .module5 .content .item:nth-child(1) {
@@ -334,7 +329,7 @@
   display: flex;
   align-items: center;
   color: #ffffff;
-  font-size: 40px;
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 
@@ -346,7 +341,7 @@
   overflow: auto;
   flex: 1;
   color: #ffffff;
-  font-size: 28px;
+  font-size: 1.4rem;
 }
 
 .homeWrap > .content .right > .foot .module6 .foot {
@@ -356,7 +351,6 @@
 .homeWrap > .content .right > .foot .module6 .foot p {
   text-align: right;
   color: #ffffff;
-  font-size: 20px;
 }
 
 .homeWrap > .content .right > .foot .module7 {
@@ -386,7 +380,7 @@
   display: flex;
   justify-content: space-around;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 5rem;
   vertical-align: bottom;
   align-items: center;
 }
@@ -401,7 +395,7 @@
   margin: 20px 0;
   color: #0B6CA1;
   display: flex;
-  font-size: 25px;
+  font-size: 1.6rem;
 }
 
 .homeWrap > .content .right > .foot .module8 > div:nth-child(2) span,
@@ -414,8 +408,8 @@
   position: fixed;
   left: 0;
   top: 0;
-  width: 1920px;
-  height: 1080px;
+  width: 100vw;
+  height: 100vh;
   display: none;
   justify-content: center;
   align-items: center;
@@ -431,8 +425,8 @@
   position: fixed;
   left: 0;
   top: 0;
-  width: 1920px;
-  height: 1080px;
+  width: 100vw;
+  height: 100vh;
   display: none;
   justify-content: center;
   align-items: center;
@@ -441,15 +435,15 @@
 
 .evaluateModule .backBut {
   position: absolute;
-  right: 96px;
-  bottom: 54px;
+  right: 5vw;
+  bottom: 5vw;
   z-index: 99;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .evaluateModule .backBut img {
@@ -457,8 +451,8 @@
 }
 
 .evaluateModule .content {
-  width: 864px;
-  height: 216px;
+  width: 45vw;
+  height: 72vh;
   background: #ffffff;
   border-radius: 10px;
   overflow: hidden;
@@ -472,7 +466,7 @@
   height: 70px;
   margin: 1px;
   background: linear-gradient(153deg, #49a0ff 0%, #3b97fd 0%, #4176e9 100%);
-  font-size: 32px;
+  font-size: 2rem;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -511,9 +505,9 @@
 
 .evaluateModule .content .selectTeacher .item p {
   color: #343434;
-  font-size: 22px;
+  font-size: 1.4rem;
   width: 25%;
-  text-indent: 54px;
+  text-indent: 5vw;
 }
 
 .evaluateModule .content .selectTeacher .item:nth-last-child(1) {
@@ -531,7 +525,7 @@
   width: 80%;
   height: 100px;
   background: #979797;
-  font-size: 48px;
+  font-size: 3rem;
   color: #ffffff;
 }
 
@@ -551,6 +545,6 @@
   display: flex;
 }
 
-#mouthRank {
+#monthRank {
   display: none;
 }
