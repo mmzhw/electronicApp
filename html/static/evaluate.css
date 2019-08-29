@@ -76,8 +76,8 @@
   width: 100%;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.07);
   padding: 0;
-  height: 50vh;
-  overflow: auto;
+  height: 600px;
+  overflow: hidden;
 }
 
 .evaluateWrap .item .module2 ul {
@@ -85,7 +85,7 @@
   width: 100%;
   padding: 0;
   text-indent: 30px;
-  height: 540px;
+  height: 480px;
   overflow: auto;
 }
 
@@ -149,7 +149,7 @@
 
 .evaluateBut > div {
   width: 230px;
-  height: 108px;
+  height: 78px;
   margin: 0 20px;
   background: linear-gradient(180deg, #0375e7 0%, #0439bb 100%);
   color: #ffffff;
@@ -174,4 +174,33 @@
 
 .backBut img {
   width: 70px;
+}
+
+.layui-layer {
+  top: 50% !important;
+  left: 50% !important;
+  width: 600px !important;
+  height: 300px !important;
+  margin-left: -300px !important;
+  margin-top: -150px !important;
+}
+
+
+.layui-layer-title {
+  height: 60px !important;
+  font-size: 26px !important;;
+  line-height: 60px !important;;
+}
+
+.layui-layer-dialog .layui-layer-content {
+  height: 160px !important;;
+  font-size: 27px !important;;
+}
+
+.layui-layer-btn a {
+  width: 100px !important;;
+  height: 60px !important;;
+  color: #ffffff !important;;
+  text-align: center !important;;
+  line-height: 60px !important;;
 }
